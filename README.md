@@ -38,12 +38,13 @@ The project employs a two-step approach. First, **K-Means Clustering** defines t
 
 ## 🚀 Key Features Implemented
 
-✅ **Data Preprocessing:** Handling missing values in `MINIMUM_PAYMENTS` and `CREDIT_LIMIT`.
-✅ **Dimensionality Reduction:** Applied **PCA (Principal Component Analysis)** to reduce noise and improve clustering performance.
-✅ **Optimal K Selection:** Used the **Elbow Method** and Silhouette Analysis to determine the ideal number of segments (4).
-✅ **Clustering:** Implementation of K-Means, Agglomerative, and Spectral Clustering (K-Means selected as final).
-✅ **Supervised Learning:** Trained a Decision Tree to classify customers into the derived segments.
-✅ **Model Persistence:** Saved the final classification model using `pickle` for future use.
+✅ **Data Preprocessing:** Handling missing values in `MINIMUM_PAYMENTS` and `CREDIT_LIMIT`  
+✅ **Dimensionality Reduction:** Applied **PCA (Principal Component Analysis)** to reduce noise and improve clustering performance  
+✅ **Optimal K Selection:** Used the **Elbow Method** and **Silhouette Analysis** to determine the ideal number of segments (4)  
+✅ **Clustering:** Implemented **K-Means**, **Agglomerative**, and **Spectral Clustering** (K-Means selected as final)  
+✅ **Supervised Learning:** Trained a **Decision Tree Classifier** to predict customer segments  
+✅ **Model Persistence:** Saved the final classification model using `pickle` for future use  
+
 
 ## 🛠️ Tech Stack
 * **Language:** Python 3.x
@@ -55,6 +56,9 @@ The project employs a two-step approach. First, **K-Means Clustering** defines t
 ## 🎯 Quick Start
 
 ### 1. Clone the Repository
+
+[git clone](https://github.com/obasama697/Market_Segmentation_Python_Model/tree/main)
+
 
 ### 2. Install Dependencies
 ```bash
@@ -80,10 +84,10 @@ loaded_model = pickle.load(open(filename, 'rb'))
 ## 📈 Key Insights (The 4 Segments)
 Based on the clustering analysis, customers were grouped into 4 distinct personalities:
 
-Cluster 0: Customers with low balance and low spending (Inactive/Low-value).
-Cluster 1: Customers with high balance but low purchase frequency (Potential churners/Savers).
-Cluster 2: High purchase frequency and high payments (Gold/Loyal customers).
-Cluster 3: High cash advance usage (High-risk/Credit seekers).
+* Cluster 0: Customers with low balance and low spending (Inactive/Low-value).
+* Cluster 1: Customers with high balance but low purchase frequency (Potential churners/Savers).
+* Cluster 2: High purchase frequency and high payments (Gold/Loyal customers).
+* Cluster 3: High cash advance usage (High-risk/Credit seekers).
 
 ## 📁 Project Structure
 ```bash
